@@ -5,5 +5,5 @@ input=st.text_area('Please ENter the text',value='')
 option=st.selectbox('To which language you wish to translate this text to?',('Malayalam','Hindi','Tamil'))
 if st.button('Translate'):
     translator=Translator()
-    translation=translator.translate(input,des=option)
+    translation=translator.translate(input,dest=option)
     st.write(translation.text)
